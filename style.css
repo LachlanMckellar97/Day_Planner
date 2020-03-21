@@ -1,6 +1,6 @@
 body {
     background-color: rgb(211, 211, 211);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(70, 65, 46);
 }
 #header {
@@ -9,6 +9,7 @@ body {
     margin: 20px;
     padding: 20px;
     border: solid 5px rgb(81, 92, 81);
+    border-radius: 5px;
 }
 #title {
     font-size: 44px;
@@ -18,11 +19,13 @@ body {
     font-size: 20px;
 }
 #hourDivs {
-    background-color: rgb(150, 182, 163);
+    background-color: rgb(192, 201, 192);
     border: solid 5px rgb(81, 92, 81);
+    border-radius: 5px;
 }
 .Hours {
     width: 100%;
+    font-size: larger;
     background-color: rgb(161, 161, 161);
     height: 100%;
     border: none;
@@ -43,22 +46,49 @@ h3 {
     width: 5%;
     color: rgb(81, 92, 81);
 }
-
-/* Colour Changing classes */
-.over {
-    background-color: rgb(214, 170, 163);
+.class {
+    display: inline-block;
 }
-.present {
-    background-color: rgb(144, 182, 182);
-}
-.savebtn {
-    
+.btn {
+    color: rgb(70, 65, 46);
     border: none;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     background-color: rgb(245, 235, 224);
 }
-.savebtn:hover {
-    background-color: rgb(145, 145, 231);
+.btn:hover, #resetbtn:hover {
+    background-color: rgb(179, 179, 241);
+}
+#resetbtn {
+    border-radius: 5px;
+    left: 42px;
+    top: 145px;
+    border: solid 1px rgb(81, 92, 81);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(245, 235, 224);
+    color: rgb(70, 65, 46);
+    position: absolute;
+}
+#currenttime {
+    border-radius: 5px;
+    right: 42px;
+    top: 145px;
+    border: solid 1px rgb(81, 92, 81);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(245, 235, 224);
+    color: rgb(70, 65, 46);
+    position: absolute;
+}
+/* Colour Changing classes */
+.over {
+    background-color: rgb(214, 170, 163);
+    color: rgb(71, 71, 71);
+}
+.present {
+    background-color: rgb(144, 182, 182);
 }
