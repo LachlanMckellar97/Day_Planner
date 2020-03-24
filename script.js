@@ -5,8 +5,9 @@ function updateday() {
     setInterval(updateday, 1000);
 function updatetime() {
     $("#currenttime").html(moment().format('LT'));
+    checktime()
 }
-    setInterval(updatetime, 1000);
+    setInterval(updatetime, 10000);
 
 //. Todays time .//
 var timeofday = moment().format('LT');
